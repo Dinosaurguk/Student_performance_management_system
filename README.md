@@ -55,7 +55,7 @@
 
 1. Клонируй репозиторий:
 ```bash
-git clone https://github.com
+git clone [https://github.com](https://github.com/Dinosaurguk/Student_performance_management_system)
 ```
 2. Открой файл решения `GradeAccounting.sln` в Visual Studio.
 3. Дождись автоматического восстановления NuGet-пакетов (или восстанови вручную через PM).
