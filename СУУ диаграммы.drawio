@@ -1,0 +1,221 @@
+<mxfile host="app.diagrams.net" pages="4">
+  <diagram name="Use Case " id="-2E1j3MCqJZEu5M_3r6E">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uc_user" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#0084B4;fillColor=none;" value="Пользователь" vertex="1">
+          <mxGeometry height="60" width="30" x="80" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_box" parent="1" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#404040;fillColor=none;startSize=23;" value="Программный комплекс «СУУ»" vertex="1">
+          <mxGeometry height="440" width="340" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" parent="uc_box" style="ellipse;whiteSpace=wrap;html=1;" value="Переключение модулей&#xa;(Преподаватель, Студент, Предмет, Оценка)" vertex="1">
+          <mxGeometry height="50" width="260" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="uc_box" style="ellipse;whiteSpace=wrap;html=1;" value="Добавление новой записи&#xa;(Кнопка &quot;Добавить&quot; -&gt; строка *)" vertex="1">
+          <mxGeometry height="50" width="260" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="uc_box" style="ellipse;whiteSpace=wrap;html=1;" value="Поиск и фильтрация в DataGridView&#xa;(Кнопка &quot;Найти&quot;)" vertex="1">
+          <mxGeometry height="50" width="260" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4" parent="uc_box" style="ellipse;whiteSpace=wrap;html=1;" value="Исключение строки из справочника&#xa;(Кнопка &quot;Удалить&quot;)" vertex="1">
+          <mxGeometry height="50" width="260" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5" parent="uc_box" style="ellipse;whiteSpace=wrap;html=1;" value="Пакетный перенос транзакций в БД&#xa;(Кнопка &quot;Сохранить&quot;)" vertex="1">
+          <mxGeometry height="50" width="260" x="40" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="uc_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="uc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="uc_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="uc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="uc_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="uc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="uc_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="uc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="uc_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="uc5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="laY4zcD2mWoMBuLY2AJz" name="Диаграмма классов ">
+    <mxGraphModel dx="1377" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="er_oz" parent="1" style="shape=swimlane;whiteSpace=wrap;html=1;startSize=23;align=center;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Оценка&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;🔑 id_Ozen : int&lt;br&gt;👤 id_Stud : int (FK)&lt;br&gt;📚 id_Pred : int (FK)&lt;br&gt;💼 id_Prepod : int (FK)&lt;br&gt;📊 Значение : int&lt;br&gt;📅 Дата : date" vertex="1">
+          <mxGeometry height="160" width="160" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="er_pr" parent="1" style="shape=swimlane;whiteSpace=wrap;html=1;startSize=23;align=center;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Предмет&lt;/div&gt;&lt;br&gt;🔑 id_Pred : int&lt;br&gt;📝 Название : string" vertex="1">
+          <mxGeometry height="90" width="160" x="360" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="er_prep" parent="1" style="shape=swimlane;whiteSpace=wrap;html=1;startSize=23;align=center;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Препод&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;🔑 id_Prepod : int&lt;/div&gt;👤 ФИО : string&lt;br&gt;📚 Предмет : string" vertex="1">
+          <mxGeometry height="110" width="160" x="360" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="er_st" parent="1" style="shape=swimlane;whiteSpace=wrap;html=1;startSize=23;align=center;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Студент&lt;/div&gt;&lt;br&gt;🔑 id_Stud : int&lt;br&gt;👤 ФИО : string&lt;br&gt;👥 Группа : string" vertex="1">
+          <mxGeometry height="110" width="160" x="200" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="er_pr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=crow;endFill=0;startArrow=oval;startFill=1;" target="er_oz">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="er_prep" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=crow;endFill=0;startArrow=oval;startFill=1;" target="er_oz">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="er_st" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=crow;endFill=0;startArrow=oval;startFill=1;" target="er_oz">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="XX1MVM5M_VtL7vL-1bGA" name="Диаграмма последовательности ">
+    <mxGraphModel dx="1377" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ll_prep" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="Преподаватель" vertex="1">
+          <mxGeometry height="340" width="100" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_ui" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="Интерфейс&#xa;winforms" vertex="1">
+          <mxGeometry height="340" width="100" x="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_back" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="Backend-логика" vertex="1">
+          <mxGeometry height="340" width="100" x="420" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_db" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="База Данных&#xa;(СУБД)" vertex="1">
+          <mxGeometry height="340" width="100" x="600" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="msg1" edge="1" parent="1" source="ll_prep" style="html=1;verticalAlign=bottom;endArrow=block;" target="ll_ui" value="Заполняет форму">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="160" />
+            </Array>
+            <mxPoint x="140" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg2" edge="1" parent="1" source="ll_ui" style="html=1;verticalAlign=bottom;endArrow=block;" target="ll_back" value="Передает объект">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="200" />
+            </Array>
+            <mxPoint x="320" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg3" edge="1" parent="1" source="ll_back" style="html=1;verticalAlign=bottom;endArrow=block;" target="ll_db" value="sql запрос к СУБД">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg4" edge="1" parent="1" source="ll_db" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endFill=0;" target="ll_back" value="Запись обновленна&#xa;(транзакция успешна)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="260" />
+            </Array>
+            <mxPoint x="500" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg5" edge="1" parent="1" source="ll_back" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endFill=0;" target="ll_ui" value="Подтверждение">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="290" />
+            </Array>
+            <mxPoint x="320" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg6" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endFill=0;" value="Видит обновленную сетку">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="289.5" y="310" as="sourcePoint" />
+            <mxPoint x="109.5" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="VqlgkbsoGup29flLVjzh" name="Диаграмма активности ">
+    <mxGraphModel dx="3650" dy="2294" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5L8R-QMbP1W6leYajxpp-1" edge="1" parent="1" source="act_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="act2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="НАЧАЛО: Открытие системы учёта&#xa;успеваемости" vertex="1">
+          <mxGeometry height="50" width="220" x="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="act1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Авторизация студента: Получение&#xa;id_Stud" vertex="1">
+          <mxGeometry height="50" width="220" x="240" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5L8R-QMbP1W6leYajxpp-2" edge="1" parent="1" source="act2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="act3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SQL: Выборка ФИО и поля Группа&#xa;из таблицы Студент" vertex="1">
+          <mxGeometry height="50" width="220" x="240" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="5L8R-QMbP1W6leYajxpp-3" edge="1" parent="1" source="act3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="act_cond" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SQL: INNER JOIN таблиц Оценка и Предмет по ключу id_Pred&#xa;(Запрос оценок по всем дисциплинам, где Оценка.id_Stud =&#xa;id_Stud)" vertex="1">
+          <mxGeometry height="60" width="360" x="170" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="act_cond" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Нашлись ли&#xa;оценки?" vertex="1">
+          <mxGeometry height="80" width="120" x="290" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="5L8R-QMbP1W6leYajxpp-4" edge="1" parent="1" source="act_yes1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="act_yes3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_yes1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Сбор массива оценок:&#xa;Дисциплина, Значение, Дата" vertex="1">
+          <mxGeometry height="50" width="180" x="110" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="act_yes2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Сортировка&#xa;записей" vertex="1">
+          <mxGeometry height="40" width="180" x="110" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="5L8R-QMbP1W6leYajxpp-6" edge="1" parent="1" source="act_yes3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="act_end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_yes3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Отрисовка персонализированной&#xa;таблицы дневника на экране" vertex="1">
+          <mxGeometry height="50" width="220" x="90" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="5L8R-QMbP1W6leYajxpp-5" edge="1" parent="1" source="act_no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="act_end2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_no" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Вывод пустой&#xa;таблицы дневника" vertex="1">
+          <mxGeometry height="50" width="160" x="410" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="act_end" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="185" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="act_end2" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="475" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="e_a1" edge="1" parent="1" source="act_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="act1" />
+        <mxCell id="e_a2" edge="1" parent="1" source="act1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="act2" />
+        <mxCell id="e_a3" edge="1" parent="1" source="act2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="act3" />
+        <mxCell id="e_a4" edge="1" parent="1" source="act3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="act_cond" />
+        <mxCell id="e_yes" edge="1" parent="1" source="act_cond" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="act_yes1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="430" as="entryPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_yes" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="да" vertex="1">
+          <mxGeometry height="20" width="30" x="235" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e_no" edge="1" parent="1" source="act_cond" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="act_no">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="430" as="entryPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_no" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="нет" vertex="1">
+          <mxGeometry height="20" width="40" x="435" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e_y2" edge="1" parent="1" source="act_yes1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="act_yes2" />
+        <mxCell id="e_y3" edge="1" parent="1" source="act_yes2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="act_yes3" />
+        <mxCell id="e_ye" edge="1" parent="1" source="act_yes3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="act_end" />
+        <mxCell id="e_ne" edge="1" parent="1" source="act_no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="act_end2" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
