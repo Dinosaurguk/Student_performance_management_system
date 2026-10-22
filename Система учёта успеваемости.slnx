@@ -1,3 +1,9 @@
 <Solution>
-  <Project Path="Система учёта успеваемости/Система учёта успеваемости.csproj" />
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Система учёта успеваемости/Система учёта успеваемости.csproj" Id="b83cf6f6-0719-4bf9-ad5b-0580c9ec5cb7">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
 </Solution>
