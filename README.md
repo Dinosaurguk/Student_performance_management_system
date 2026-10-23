@@ -3,11 +3,6 @@
 </p>
 
 <h1 align="center">Система учёта успеваемости</h1>
-
-<p align="center">
-  <a href="#">
-    <img src="https://shields.io" alt="Version" />
-  </a>
   <a href="#">
     <img src="https://shields.io" alt="C#" />
   </a>
@@ -28,8 +23,6 @@
 Полная реализация по разработанным диаграммам (Use Case, ER, Class, Sequence).
 
 ## What can it do?
-
-## Screenshots
 
 ### Журнал оценок
 <p align="center">
