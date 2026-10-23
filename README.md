@@ -1,11 +1,6 @@
 <p align="center">
 <img width="1000" height="431" alt="Image" src="https://github.com" />
 </p>
-
-<h1 align="center">Система учёта успеваемости</h1>
-  <a href="#">
-    <img src="https://shields.io" alt="C#" />
-  </a>
   <a href="#">
     <img src="https://shields.io" alt="Windows Forms" />
   </a>
