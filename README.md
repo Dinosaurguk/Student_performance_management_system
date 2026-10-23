@@ -1,9 +1,11 @@
-  <a href="#">
-    <img src="https://shields.io" alt="Windows Forms" />
-  </a>
-  <a href="#">
-    <img src="https://shields.io" alt="Database" />
-  </a>
+<p align="center">
+  <!-- Бейдж Windows Forms -->
+  <img src="https://shields.io" alt="Windows Forms" />
+
+  <!-- Бейдж Базы Данных (так как в проекте .accdb, это MS Access) -->
+  <img src="https://shields.io" alt="Database" />
+
+  <!-- Бейдж Лицензии (активная ссылка на ваш файл LICENSE) -->
   <a href="LICENSE">
     <img src="https://shields.io" alt="License" />
   </a>
@@ -15,12 +17,6 @@
 Полная реализация по разработанным диаграммам (Use Case, ER, Class, Sequence).
 
 ## What can it do?
-
-### Журнал оценок
-<p align="center">
-<!-- Сюда Суровцев вставит скриншот журнала -->
-<img width="1000" height="500" alt="Журнал оценок" src="https://github.com" />
-</p>
 
 ### Взаимодействия
 - Просмотр списка закрепленных учебных групп и предметов
