@@ -1,6 +1,3 @@
-<p align="center">
-<img width="1000" height="431" alt="Image" src="https://github.com" />
-</p>
   <a href="#">
     <img src="https://shields.io" alt="Windows Forms" />
   </a>
